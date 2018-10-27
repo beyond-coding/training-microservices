@@ -1,4 +1,4 @@
-package com.beyondcoding.teahouse.discovery;
+package com.beyondcoding.infrastructure.discovery;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,6 +1,6 @@
 spring:
   application:
-    name: dessert-expert
+    name: teahouse
 
   cloud:
     config:

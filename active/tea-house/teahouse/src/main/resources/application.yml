@@ -1,7 +1,2 @@
 server:
-  port: 8001
-
-name:
-  expert: Riyad
-  dessert: Strawberry pie
-  teahouse: Some Teahouse
+  port: 8000
