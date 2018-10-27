@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: marcopolo.marco
+        output:
+          destination: marcopolo.polo
+
+      kafka:
+        binder:
+          brokers: teahouse.beyond-coding.com
