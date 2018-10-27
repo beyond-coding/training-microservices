@@ -1,0 +1,7 @@
+server:
+  port: 8001
+
+name:
+  expert: Hosam
+  tea: White tea
+  teahouse: Some Teahouse
