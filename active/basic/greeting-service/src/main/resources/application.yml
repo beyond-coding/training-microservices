@@ -1,0 +1,5 @@
+server:
+  port: 8001
+
+greeting: Greeting from the application properties
+number: 1

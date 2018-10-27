@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Communication</title>
+</head>
+<body>
+
+<h2>Communication interface</h2>
+
+
+<p th:text="${communication}">No message so far</p>
+
+<form th:action="@{/greeting}" method="post">
+    <button type="submit" class="btn-large waves-effect waves-light">Greeting</button>
+</form>
+
+<br /><br />
+
+<form th:action="@{/message}" method="post">
+    <button type="submit" class="btn-large waves-effect waves-light">Message</button>
+</form>
+
+</body>
+</html>

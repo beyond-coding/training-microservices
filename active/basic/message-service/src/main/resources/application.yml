@@ -1,0 +1,4 @@
+server:
+  port: 8000
+
+message: Message from the application properties

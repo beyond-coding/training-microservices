@@ -1,0 +1,5 @@
+server:
+  port: 9002
+
+turbine:
+  app-config: communication-ui,communication-gateway,message,greeting
