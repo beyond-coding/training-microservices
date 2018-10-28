@@ -13,7 +13,7 @@ spring:
         orders:
           destination: teahouse.order.tea
           content-type: application/json
-          group: dessert-experts
+          group: tea-experts
         products:
           destination: teahouse.product.ready
           content-type: application/json
