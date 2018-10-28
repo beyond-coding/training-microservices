@@ -28,7 +28,7 @@ public class MarcoApplicationTests {
                 .poll()
                 .getPayload();
 
-        assertEquals("{\"name\":\"Marco\"}", payload.toString());
+        assertEquals("{\"name\":\"Marco 1\"}", payload.toString());
     }
 
 }

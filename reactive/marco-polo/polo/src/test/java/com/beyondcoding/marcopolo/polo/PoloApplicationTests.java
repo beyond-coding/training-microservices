@@ -26,7 +26,7 @@ public class PoloApplicationTests {
 
     @Test
     public void testMarcoIsReceivedAndPoloIsSent() {
-        Message<PoloApplication.Person> message = MessageBuilder.withPayload(new PoloApplication.Person("Marco"))
+        Message<PoloApplication.Person> message = MessageBuilder.withPayload(new PoloApplication.Person("Marco 1"))
                 .build();
         pipe.input().send(message);
 
@@ -34,7 +34,7 @@ public class PoloApplicationTests {
                 .poll()
                 .getPayload();
 
-        assertEquals("{\"name\":\"Polo\"}", payload.toString());
+        assertEquals("{\"name\":\"Polo 1\"}", payload.toString());
     }
 
 }
