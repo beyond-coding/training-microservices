@@ -1,5 +1,5 @@
-name:
-  teahouse: Best Tea House
+server:
+  port: 8000
 
 spring:
   cloud:
@@ -7,13 +7,15 @@ spring:
       kafka:
         binder:
           brokers:
-          - teahouse.beyond-coding.com
-#          - localhost
+          - localhost
+#          - teahouse.beyond-coding.com
       bindings:
-        orders:
+        teas:
+          destination: teahouse.order.tea
+          content-type: application/json
+        desserts:
           destination: teahouse.order.dessert
           content-type: application/json
-          group: dessert-experts
         products:
           destination: teahouse.product.ready
           content-type: application/json

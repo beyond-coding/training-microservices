@@ -1,2 +1,19 @@
 name:
   teahouse: Best Tea House
+
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers:
+          - teahouse.beyond-coding.com
+#          - localhost
+      bindings:
+        orders:
+          destination: teahouse.order.dessert
+          content-type: application/json
+          group: dessert-experts
+        products:
+          destination: teahouse.product.ready
+          content-type: application/json

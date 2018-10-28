@@ -1,5 +1,10 @@
+server:
+  port: 8001
+
 name:
-  teahouse: Best Tea House
+  expert: Hosam
+  tea: White tea
+  teahouse: Some Teahouse
 
 spring:
   cloud:
@@ -7,13 +12,13 @@ spring:
       kafka:
         binder:
           brokers:
-          - teahouse.beyond-coding.com
-#          - localhost
+          - localhost
+#          - teahouse.beyond-coding.com
       bindings:
         orders:
-          destination: teahouse.order.dessert
+          destination: teahouse.order.tea
           content-type: application/json
-          group: dessert-experts
+          group: tea-experts
         products:
           destination: teahouse.product.ready
           content-type: application/json

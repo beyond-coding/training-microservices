@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: tea-expert
+
+  cloud:
+    config:
+      discovery:
+        enabled: true
+
+#    stream:
+#      kafka:
+#        binder:
+#          brokers: teahouse.beyond-coding.com
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${EUREKA_HOSTNAME:localhost}:8761/eureka/

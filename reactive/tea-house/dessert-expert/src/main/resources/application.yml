@@ -1,5 +1,10 @@
+server:
+  port: 8002
+
 name:
-  teahouse: Best Tea House
+  expert: Riyad
+  dessert: Strawberry pie
+  teahouse: Some Teahouse
 
 spring:
   cloud:
@@ -7,8 +12,8 @@ spring:
       kafka:
         binder:
           brokers:
-          - teahouse.beyond-coding.com
-#          - localhost
+          - localhost
+#          - teahouse.beyond-coding.com
       bindings:
         orders:
           destination: teahouse.order.dessert
