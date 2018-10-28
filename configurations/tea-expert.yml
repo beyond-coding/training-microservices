@@ -11,7 +11,7 @@ spring:
 #          - localhost
       bindings:
         orders:
-          destination: teahouse.order.dessert
+          destination: teahouse.order.tea
           content-type: application/json
           group: dessert-experts
         products:
